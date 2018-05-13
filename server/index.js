@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const path = require('path');
 const authController = require('./controllers/authController');
+const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
 const config = require('./config');
@@ -26,6 +27,6 @@ app.use('/feedback', feedbackRoutes);
 app.get('/*', (req,res) => res.redirect('/'));
 
 // Start the server
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server listening on port 3000')
 });
