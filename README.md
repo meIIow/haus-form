@@ -24,3 +24,6 @@ npm start
 
 navigate to localhost:3000 to interact with web page
 
+### time taken
+
+cut myself off after just about 8 hours, plus the time it took to host and write this readMe. Still some print statements and comments I should clean out but I got the functionality mostly down.
